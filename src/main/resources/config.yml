@@ -36,3 +36,47 @@ output_items:
   - minecraft:iron_ingot
   - minecraft:gold_ingot
   - minecraft:copper_ingot
+
+# Perk System Configuration
+perk_system:
+  # Default duration for perks (in seconds)
+  default_duration: 300
+
+  # Default costs for perks (in economy currency or XP)
+  default_costs:
+    fly: 100
+    god: 200
+    weather: 50
+    time: 50
+
+  # Maximum duration for perks (in seconds)
+  max_duration: 3600
+
+  # Cooldown between perk uses (in seconds)
+  cooldown: 60
+
+  # Whether to use experience points as currency when Vault is not available
+  use_experience_fallback: true
+
+  # Fly perk specific settings
+  fly:
+    safety_net:
+      enabled: true
+      slow_falling_level: 1
+      max_duration: 30
+
+# Weather Control Configuration
+weather_control:
+  # Duration of weather change (in seconds)
+  duration: 600
+
+# Time Control Configuration
+time_control:
+  # Allow setting specific times (true/false)
+  allow_specific_time: false
+  # List of allowed time settings (if allow_specific_time is true)
+  allowed_times:
+    - day
+    - night
+    - noon
+    - midnight

@@ -3,4 +3,18 @@ version: '1.0-SNAPSHOT'
 main: com.tynicraft.autoSign.AutoSign
 api-version: '1.20'
 authors: [ ArraxTheWolf ]
-description: Auto smelter and other stuff
+description: Auto smelter and perk system
+softdepend: [Vault]
+
+commands:
+  autosign-test:
+    description: Test command for AutoSign and Perk features
+    usage: /<command> <subcommand> [args...]
+
+permissions:
+  autosign.create.perksign:
+    description: Allows creation of perk signs
+    default: op
+  autosign.create.autosign:
+    description: Allows creation of auto smelter signs
+    default: op
