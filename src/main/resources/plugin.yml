@@ -1,0 +1,6 @@
+name: AutoSign
+version: '1.0-SNAPSHOT'
+main: com.tynicraft.autoSign.AutoSign
+api-version: '1.20'
+authors: [ ArraxTheWolf ]
+description: Auto smelter and other stuff

@@ -1,0 +1,38 @@
+# Debug mode (true/false)
+debug_mode: true
+
+# Interval (in ticks) between item movement attempts (20 ticks = 1 second)
+update_interval: 60
+
+# Maximum number of items to move per operation
+max_items_per_move: 1
+
+# List of items that can be used as fuel
+fuel_items:
+  - minecraft:coal
+  - minecraft:charcoal
+  - minecraft:coal_block
+  - minecraft:lava_bucket
+  - minecraft:blaze_rod
+  - minecraft:dried_kelp_block
+  - minecraft:oak_log
+  - minecraft:birch_log
+  - minecraft:spruce_log
+  - minecraft:jungle_log
+  - minecraft:acacia_log
+  - minecraft:dark_oak_log
+
+# List of smeltable ores
+smeltable_ores:
+  - minecraft:iron_ore
+  - minecraft:gold_ore
+  - minecraft:copper_ore
+  - minecraft:raw_iron
+  - minecraft:raw_gold
+  - minecraft:raw_copper
+
+# List of output items (ingots, etc.)
+output_items:
+  - minecraft:iron_ingot
+  - minecraft:gold_ingot
+  - minecraft:copper_ingot
