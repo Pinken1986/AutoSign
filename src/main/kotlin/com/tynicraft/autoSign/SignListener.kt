@@ -42,6 +42,7 @@ class SignListener(private val plugin: AutoSign) : Listener {
         val block = event.block
         if (block.state is Sign) {
             val sign = block.state as Sign
+            @Suppress("DEPRECATION")
             if (isValidAutoSign(sign.getLine(0), sign.getLine(1))) {
                 plugin.signManager.removeSign(block.location)
                 event.player.sendMessage("AutoSign removed.")
