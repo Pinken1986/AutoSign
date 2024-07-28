@@ -1,82 +1,29 @@
+# AutoSign Configuration
+
 # Debug mode (true/false)
-debug_mode: true
+debug_mode: false
 
-# Interval (in ticks) between item movement attempts (20 ticks = 1 second)
-update_interval: 60
+# Interval (in ticks) between sign processing (20 ticks = 1 second)
+processing_interval: 20
 
-# Maximum number of items to move per operation
-max_items_per_move: 1
+# Maximum number of items to transfer per operation
+max_transfer_amount: 64
 
-# List of items that can be used as fuel
-fuel_items:
-  - minecraft:coal
-  - minecraft:charcoal
-  - minecraft:coal_block
-  - minecraft:lava_bucket
-  - minecraft:blaze_rod
-  - minecraft:dried_kelp_block
-  - minecraft:oak_log
-  - minecraft:birch_log
-  - minecraft:spruce_log
-  - minecraft:jungle_log
-  - minecraft:acacia_log
-  - minecraft:dark_oak_log
+# List of valid fuel items (material names)
+valid_fuels:
+  - COAL
+  - CHARCOAL
+  - COAL_BLOCK
+  - LAVA_BUCKET
 
-# List of smeltable ores
-smeltable_ores:
-  - minecraft:iron_ore
-  - minecraft:gold_ore
-  - minecraft:copper_ore
-  - minecraft:raw_iron
-  - minecraft:raw_gold
-  - minecraft:raw_copper
+# List of valid smeltable items (material names)
+valid_smeltables:
+  - IRON_ORE
+  - GOLD_ORE
+  - SAND
+  - COBBLESTONE
+  - RAW_IRON
+  - RAW_GOLD
 
-# List of output items (ingots, etc.)
-output_items:
-  - minecraft:iron_ingot
-  - minecraft:gold_ingot
-  - minecraft:copper_ingot
-
-# Perk System Configuration
-perk_system:
-  # Default duration for perks (in seconds)
-  default_duration: 300
-
-  # Default costs for perks (in economy currency or XP)
-  default_costs:
-    fly: 100
-    god: 200
-    weather: 50
-    time: 50
-
-  # Maximum duration for perks (in seconds)
-  max_duration: 3600
-
-  # Cooldown between perk uses (in seconds)
-  cooldown: 60
-
-  # Whether to use experience points as currency when Vault is not available
-  use_experience_fallback: true
-
-  # Fly perk specific settings
-  fly:
-    safety_net:
-      enabled: true
-      slow_falling_level: 1
-      max_duration: 30
-
-# Weather Control Configuration
-weather_control:
-  # Duration of weather change (in seconds)
-  duration: 600
-
-# Time Control Configuration
-time_control:
-  # Allow setting specific times (true/false)
-  allow_specific_time: false
-  # List of allowed time settings (if allow_specific_time is true)
-  allowed_times:
-    - day
-    - night
-    - noon
-    - midnight
+# Signs data (do not edit manually)
+signs: {}
